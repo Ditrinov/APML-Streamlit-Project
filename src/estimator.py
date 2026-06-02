@@ -25,12 +25,12 @@ class PDMEstimator(BaseEstimator, ClassifierMixin):
         self.random_state = random_state
 
     def fit(self, X, y):
-        self.model_ = xgb.XGBClassifier(
+        self.model_ = XGBClassifier(
             n_estimators=self.n_estimators,
             max_depth=self.max_depth,
-            class_weight=self.class_weight,
+            scale_pos_weight=33,   # handles imbalance: ~97/3 ratio
             random_state=self.random_state,
-            n_jobs=-1,
+            eval_metric="logloss",
         )
         self.model_.fit(X, y)
         self.classes_ = self.model_.classes_
