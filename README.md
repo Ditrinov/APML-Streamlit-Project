@@ -122,7 +122,7 @@ Each step inherits from `sklearn.BaseEstimator` + `TransformerMixin`, making the
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/pdm-pipeline.git
+git clone https://github.com/Ditrinov/APML-Streamlit-Project.git
 cd pdm-pipeline
 ```
 
