@@ -211,10 +211,10 @@ Expected performance on the AI4I 2020 dataset:
 
 | Metric | Score |
 |---|---|
-| ROC-AUC (CV) | ~0.98 |
-| Precision (Failure) | ~0.80 |
-| Recall (Failure) | ~0.85 |
-| F1-Score (Failure) | ~0.82 |
+| ROC-AUC (CV) | ~0.9730 |
+| Precision (Failure) | ~0.75 |
+| Recall (Failure) | ~0.78 |
+| F1-Score (Failure) | ~0.76 |
 
 > Results may vary slightly depending on random seed and scikit-learn version.
 
