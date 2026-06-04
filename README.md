@@ -107,7 +107,7 @@ Raw CSV Input
        │
        ▼
 ┌──────────────┐
-│ PDMEstimator │  → RandomForestClassifier (class_weight='balanced')
+│ PDMEstimator │  → XGBoost (scale_pos_weight=33,   # handles imbalance: ~97/3 ratio)
 └──────┬───────┘
        │
        ▼
